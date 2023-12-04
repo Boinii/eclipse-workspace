@@ -1,0 +1,23 @@
+package Com.Droupdown;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ousmaniya {
+
+	public void Basetest() {
+		WebDriver Driver;
+		String ApplicationURLadress="https://www.osmania.ac.in/";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationURLadress);
+		Driver.manage().window().maximize();
+	
+	}
+	public static void main(String[] args) {
+		ousmaniya testing=new ousmaniya();
+		
+		testing.Basetest();
+		
+	}
+}

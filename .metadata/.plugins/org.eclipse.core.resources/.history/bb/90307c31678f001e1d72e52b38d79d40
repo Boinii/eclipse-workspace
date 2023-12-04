@@ -1,0 +1,29 @@
+package Com.googlesigin;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class practiceofsigintext {
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String applicationURLadress="http://google.com";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.manage().window().maximize();
+		Driver.get(applicationURLadress);
+		String expectedtitle="google";
+		System.out.println("The expected title of the page is :- "+expectedtitle);
+		String actualtitle=Driver.getTitle();
+		System.out.println("The actual title of the page is :- "+actualtitle);
+if(expectedtitle.equals(actualtitle)) {
+	System.out.println("The Expected title is equals to the actul title of the page");
+}
+else {
+	System.out.println("The actual title page is not equals to the eepected homepage ");
+}
+
+
+
+	}
+
+}

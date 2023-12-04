@@ -1,0 +1,12 @@
+package Com.ChromeBrowser;
+
+public class Autommatingmultibrosers {
+
+	public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver","./Browsers/chromedriver.exe");
+ChromeDriver Driver=new ChromeDriver();
+
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package Com.launchingyoutube;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class searchingoperation {
+	
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String Applictionurladress="http://youtube.com";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(Applictionurladress);
+		Driver.manage().window().maximize();
+
+	
+	}
+
+}

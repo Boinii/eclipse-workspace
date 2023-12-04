@@ -1,0 +1,12 @@
+package Com.validatingurl;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Faceboo9kUrl {
+	String aplicationurl="http://facebook.com";
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","./Browsers/chromedriver.exe" );
+		ChromeDriver Driver=new ChromeDriver();
+		Driver.get("aplicationurl");
+	}
+}

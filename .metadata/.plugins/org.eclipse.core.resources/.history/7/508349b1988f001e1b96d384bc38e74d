@@ -1,0 +1,33 @@
+package Com.gettingtextwithlinksofpage;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class tsrtc {
+	
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String ApplicationURLadress="https://www.tsrtconline.in/oprs-web/";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationURLadress);
+		//<a class="tabcopy" href="/oprs-web/ticket/waitlist.do"
+		//target="_top" title="Enquiry">Enquiry</a>
+		By attributeoftheenhrefproperty=By.partialLinkText("href");
+		System.out.println("The actual attributeof property is :- "+attributeoftheenhrefproperty);
+		By attributeofthetarget=By.partialLinkText("target");
+		System.out.println("The actual attribute of the targetproperty is:- "+attributeofthetarget);
+		By Enquiryproperty=By.tagName("a");
+		List<WebElement>Enquirty=Driver.findElements(attributeofthetarget);
+		int Homepagelinkscount=Enquirty.size();
+		System.out.println("The common links counnt of the homepage is :- "+Homepagelinkscount);
+		Driver.close();
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package Com.AutomationBrowser;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class ChromeBrowser {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver", "./Browsers/ChromeSetup.exe");
+		EdgeDriver Driver=new EdgeDriver();
+		Driver.get("http://youtube.com");
+
+	}
+
+}

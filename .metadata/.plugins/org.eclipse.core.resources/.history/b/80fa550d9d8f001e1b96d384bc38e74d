@@ -1,0 +1,30 @@
+package Com.gettingtextwithlinksofpage;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class practice {
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String ApplicationnURLadress="https://www.tsrtconline.in/oprs-web/";
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationnURLadress);
+		//<a class="tabcopy" href="/oprs-web/ticket/waitlist.do"
+				//target="_top" title="Enquiry">Enquiry</a>
+		By Enquiryproperty=By.tagName("a");
+		List<WebElement>Enquiry=Driver.findElements(Enquiryproperty);
+		int commonlinks=Enquiry.size();
+		System.out.println("The common links is :- "+Enquiry);
+		for(int index=0;index<Enquiry.size();index++) {
+			String commonlinkstext=Enquiry.get(index).getText();
+			System.out.println(index+"-"+commonlinkstext);
+		}
+		
+	}
+	
+
+}

@@ -1,0 +1,18 @@
+package Com.Exceloperations;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+
+public class Excel_readOperation {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+FileInputStream testdata=new FileInputStream("C:\\Users\\boini\\OneDrive\\文档\\Myfirst.xlsx");
+	XSSFWorkbook workbook=new XSSFWorkbook(testdata);
+	}
+
+}

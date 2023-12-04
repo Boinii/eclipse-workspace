@@ -1,0 +1,12 @@
+package Com.multiscreenshot;
+
+import org.openqa.selenium.WebDriver;
+
+public class screenshots {
+	WebDriver Driver;
+	String Applicatioonurladress="http://google.com";
+	public void setup() {
+		system.set
+	}
+
+}

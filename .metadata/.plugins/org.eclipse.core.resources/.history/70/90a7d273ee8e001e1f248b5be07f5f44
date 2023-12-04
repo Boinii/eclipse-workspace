@@ -1,0 +1,12 @@
+package Com.AutomationBrowser;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ChromeBrowser {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "./Browsers/ChromeSetup.exe");
+		ChromeDriver Driver=new ChromeDriver();
+		Driver.get("youtubr.com")
+	}
+
+}

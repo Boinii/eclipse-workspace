@@ -1,0 +1,38 @@
+package Com.screenshot;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.google.common.io.Files;
+
+public class Amazon {
+	private static final Files FileUtils = null;
+	WebDriver Driver;
+	String ApplicationUrladress="http://amazon.com";
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationUrladress);
+		Driver.manage().window().maximize();
+	}
+	public void capcturing() throws IOException {
+		File amazonshreenshot=((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copy(amazonshreenshot, new File("C:\\Users\\boini\\eclipse-workspace\\OrangeHRMApplication\\Screenshot"));
+	}
+	public void teardown() {
+		Driver.quit();
+	}
+	public static void main(String[] args) throws IOException {
+		Amazon screenshot=new Amazon();
+		screenshot.setup();
+		screenshot.capcturing();
+		screenshot.teardown();
+	}
+	
+
+}

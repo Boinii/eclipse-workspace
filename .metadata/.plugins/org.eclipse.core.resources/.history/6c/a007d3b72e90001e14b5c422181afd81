@@ -1,0 +1,21 @@
+package Com.MouseAction;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Amazon {
+	 
+	public static void main(String[] args) {
+		WebDriver Driver ;
+		String ApplicationUrladress="http://amzon.com";
+		System.setProperty("webdriver.edge.driver", "./Browsers/msedgedriver.exe");
+       Driver=new EdgeDriver();
+       Driver.get(ApplicationUrladress);
+       
+       
+		
+		
+		
+	}
+
+}

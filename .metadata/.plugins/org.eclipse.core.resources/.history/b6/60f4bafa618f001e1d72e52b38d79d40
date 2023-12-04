@@ -1,0 +1,15 @@
+package Com.googlesigin;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class sigin {
+	
+	public static void main(String[] args) {
+		String ApplicationUrladress="http://google.com";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		ChromeDriver Driver=new ChromeDriver();
+		Driver.get(ApplicationUrladress);
+		
+	}
+
+}

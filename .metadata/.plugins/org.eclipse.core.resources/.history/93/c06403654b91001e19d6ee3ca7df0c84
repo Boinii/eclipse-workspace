@@ -1,0 +1,15 @@
+package Com.outputprint;
+
+public class printingoutput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("Livetech");
+System.out.println("ameerpet hyd");
+System.out.println("Manual testing ");
+System.out.println("Automation testing ");
+System.out.println("selenium webdriver");
+System.out.println("livetech"+"ameerpet hyd"+"Manual testing");
+	}
+
+}

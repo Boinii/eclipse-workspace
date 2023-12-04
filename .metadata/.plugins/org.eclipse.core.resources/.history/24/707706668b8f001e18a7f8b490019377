@@ -1,0 +1,18 @@
+package Com.TSRTCAutomation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Findinglinkscommonproperty {
+	
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String ApplicationUrladress="https://www.tsrtconline.in/oprs-web/";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationUrladress);
+		
+}
+	
+
+}

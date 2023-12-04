@@ -1,0 +1,10 @@
+package Com.gettingtextwithlinksofpage;
+
+public class HeaderBlock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package Com.MouseAction;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class usingpublicvoid {
+	WebDriver Driver;
+	String ApplicationURLadress="http://amazon.com";
+	public void setup() {
+		//WebDriver Driver;
+		//String ApplicationURLadress="http://amazon.com";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+	Driver=new ChromeDriver();
+	}
+public void amazon() {
+	Driver.get(ApplicationURLadress);
+	
+}
+
+
+public static void main(String[] args) {
+	usingpublicvoid amazon=new usingpublicvoid ();
+	amazon.setup();
+	
+	amazon.amazon();
+}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-04T16:20:00 IST" name="Default suite" finished-at="2023-12-04T16:20:05 IST" duration-ms="4872">
+    <groups>
+    </groups>
+    <test started-at="2023-12-04T16:20:00 IST" name="Default test" finished-at="2023-12-04T16:20:05 IST" duration-ms="4872">
+      <class name="Com.operatingbrowserwithtestng.Loogintest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Com.operatingbrowserwithtestng.Loogintest@cad498c]" started-at="2023-12-04T16:20:00 IST" name="setup" finished-at="2023-12-04T16:20:02 IST" duration-ms="1993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="logintest()[pri:1, instance:Com.operatingbrowserwithtestng.Loogintest@cad498c]" started-at="2023-12-04T16:20:02 IST" name="logintest" description="Login Functionality testing" finished-at="2023-12-04T16:20:04 IST" duration-ms="2158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Com.operatingbrowserwithtestng.Loogintest@cad498c]" started-at="2023-12-04T16:20:04 IST" name="teardown" finished-at="2023-12-04T16:20:05 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Com.operatingbrowserwithtestng.Loogintest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

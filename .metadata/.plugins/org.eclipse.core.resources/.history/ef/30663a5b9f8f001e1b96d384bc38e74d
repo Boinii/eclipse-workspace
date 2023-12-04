@@ -1,0 +1,18 @@
+package Com.gettingtextwithlinksofpage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HeaderBlock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver Driver;
+		String ApplicationnURLadress="https://www.tsrtconline.in/oprs-web/";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationnURLadress);
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package Com.ChromeBrowser;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Autommatingmultibrosers {
+
+	public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+ChromeDriver Driver=new ChromeDriver();
+Driver.get("http://facebook.com");
+Driver.navigate().to("http://youtube.com");
+Driver.navigate().to("http://Bing.com");
+Driver.close();
+System.out.println("The browser Closed sucessffully ");
+
+		
+		
+	}
+
+}

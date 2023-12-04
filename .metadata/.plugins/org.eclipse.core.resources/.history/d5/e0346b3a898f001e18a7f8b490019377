@@ -1,0 +1,29 @@
+package Com.googlesigin;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Attribute {
+
+	public static void main(String[] args) {
+WebDriver Driver;
+String ApplicationnURLadress="http://google.com";
+System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+Driver=new ChromeDriver();
+Driver.get(ApplicationnURLadress);
+//<a class="gb_za gb_jd gb_Ld gb_ie" aria-label="Sign in"
+//href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAmgQ" 
+//target="_top"><span class="gb_Hd">Sign in</span></a>
+By signinroperty=By.partialLinkText("Sign in");
+WebElement signin = Driver.findElement(signinroperty);
+signin.click();
+String attributeoftheactualpagehref=signin.getAttribute("href");
+System.out.println("The attribute of the current page is :- "+attributeoftheactualpagehref);
+String attributeofthetarget=signin.getAttribute("target");
+System.out.println("The attribute of the target is :- "+attributeofthetarget);
+Driver.close();
+	}
+
+}

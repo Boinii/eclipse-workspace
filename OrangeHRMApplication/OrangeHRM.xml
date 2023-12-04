@@ -1,0 +1,23 @@
+<suite name="OrangeHRMApplication">
+	<test name="logintest">
+		<classes>
+			<class name="Com.OrangeHRM.Logintest">
+				
+			</class> 
+		</classes>
+	</test>
+	<test name="Addemployee">
+		<classes>
+			<class name="Com.orangeHRM;AddEmployee">
+				
+			</class>
+		</classes>
+	</test>
+	<test name="EmployeelistsTest">
+		<classes>
+			<Class name="Com.OrangeHRM.Employeelist">
+				
+			</Class>
+		</classes>
+	</test>
+</suite>

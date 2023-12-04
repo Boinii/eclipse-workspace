@@ -1,0 +1,17 @@
+package Com.gettingtextwithlinksofpage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class tsrtc {
+	
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String ApplicationURLadress="https://www.tsrtconline.in/oprs-web/";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationURLadress);
+		
+	}
+
+}

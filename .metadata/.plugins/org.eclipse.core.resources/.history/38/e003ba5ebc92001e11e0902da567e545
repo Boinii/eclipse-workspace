@@ -1,0 +1,28 @@
+package Com.exceloperation;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+@SuppressWarnings("unused")
+public class exceloperation {
+
+	public static void main(String[] args) throws IOException {
+		FileInputStream testdataile=new FileInputStream("./src/Com/excelfiles/Book1.xlsx");
+		XSSFWorkbook Workbook=new XSSFWorkbook("testdataile");
+		XSSFSheet sheetofwork=Workbook.getSheet("Sheet1");
+		Row rowoftestdat=sheetofwork.getRow(0);
+		Cell celloftherow=rowoftestdat.getCell(0);
+		String testData=celloftherow.getStringCellValue();
+		System.out.println(testData);
+	
+	}
+
+}

@@ -1,0 +1,43 @@
+package Com.Exceloperations;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class getmethod {
+
+	public static void main(String[] args) throws IOException {
+		FileInputStream testDataFile = new FileInputStream("C:\\Users\\boini\\OneDrive\\文档\\Myfirst.xlsx");
+
+		 // Identify the WorkBook in the File(Excel File)
+		XSSFWorkbook workBook = new XSSFWorkbook(testDataFile);
+
+		// Identify a Particular Sheet in the WorkBook
+		XSSFSheet testDataSheet = workBook.getSheet("TestData");
+
+		// Identify a Particular Row in the Sheet
+		// Row - interface of APACHE POI -- consider it as one of the DataType
+		Row testDataSheetRow=testDataSheet.getRow(1);
+
+		// Identify a Particular Row of Cell
+		Cell testDataRowOfCell=testDataSheetRow.getCell(1);
+
+		// get the Test Data from the Row of the Cell
+		String testData=testDataRowOfCell.getStringCellValue();
+		System.out.println(testData);
+
+
+		// 2nd Row of 2nd Cell data
+		Row secondTestDataRow=testDataSheet.getRow(2);
+		Cell secondRowofSecondCell=secondTestDataRow.getCell(2);
+
+		String data=secondRowofSecondCell.getStringCellValue();
+		System.out.println(data);
+
+
+	}
+}

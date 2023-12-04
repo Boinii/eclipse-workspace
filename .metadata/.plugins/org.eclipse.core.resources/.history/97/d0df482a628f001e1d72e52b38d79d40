@@ -1,0 +1,25 @@
+package Com.googlesigin;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class sigin {
+	
+	public static void main(String[] args) {
+		String ApplicationUrladress="http://google.com";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		ChromeDriver Driver=new ChromeDriver();
+		Driver.get(ApplicationUrladress);
+		//<a class="gb_za gb_jd gb_Ld gb_ie" aria-label="Sign in" 
+		//href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;
+		//continue=https://www.google.com/&amp;ec=GAZAmgQ" 
+		//target="_top"><span class="gb_Hd">Sign in</span></a>
+		By siginproperty=By.partialLinkText("in");
+		WebElement sigin=Driver.findElement(siginproperty);
+		sigin.click();
+	
+	
+	}
+
+}

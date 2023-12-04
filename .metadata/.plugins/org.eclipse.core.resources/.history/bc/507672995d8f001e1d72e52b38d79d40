@@ -1,0 +1,34 @@
+package Com.OrangeHRMApplication;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class applicationlogin {
+	
+	public static void main(String[] args) {
+		WebDriver Driver;
+		String ApplicationnUrladress="http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/dashboard";
+		System.setProperty("webdriver.chrome.driver", "./Browsers/chromedriver.exe");
+		Driver=new ChromeDriver();
+		Driver.get(ApplicationnUrladress);
+		//name="txtUsername" 
+		//id="txtUsername"
+		String Usernametestdata="Admin";
+		By usernameproprty=By.id("txtUsername");
+	WebElement username=Driver.findElement(usernameproprty);
+	username.sendKeys(Usernametestdata);
+	//id="txtPassword" 
+	String passwordtestdata="Rena@amma123";
+	By passwordproperty=By.id("txtPassword") ;
+	WebElement password=Driver.findElement(passwordproperty);
+	password.sendKeys(passwordtestdata);
+	//class="button"
+	By loginbuttonproperty=By.className("button");
+	WebElement loginbutton=Driver.findElement(loginbuttonproperty);
+	loginbutton.click();
+	//Driver.close();
+	
+	}
+}
